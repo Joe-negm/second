@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="Guess.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <p class="Header">Guess!</p>
+            <p class="Explain">Word : Meaning</p>
+        </header>
+        
+        <div class="Enterance">
+            <button class="start">Start Game</button> 
+            <button class="Enter">Enter Custom Words</button>
+        </div>
+        
+        <button class="next"> Next Word</button> 
+        <div id="word-display">Press Start to begin!</div>
+        
+        <div class="answers-container">
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+        </div>
+
+        <p class="Win">🎉 Correct!<br>Press Next</p>
+        <p class="lose">❌ Try Again</p>        
+        <p class="hint">Click on the correct letter to reveal it in the word</p>
+        <div class="word-count">Word: <span id="current-count">0</span>/<span id="total-count">0</span></div>
+        
+        <div class="write">
+            <input type="password" placeholder="Enter a Word:Meaning" class="Enter-Word">
+            <button class="submit">Add Word</button>
+        </div>
+    </main>
+
+    <script src="Guess.js"></script>
+</body>
+</html>
